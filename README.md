@@ -2,26 +2,26 @@
 
 **Gmsh .geo file to create a .msh file for the structured elbow tutorial**
 
-P.S.: For OpenFOAM tutorials you must **edit** the file constant/polyMesh/boundary to replace from patch type to wall and empty boundary types:
+P.S.: For OpenFOAM tutorials you must **edit** the file *constant/polyMesh/boundary* to replace these *patch* types to *wall* and *empty* boundary types:
 
-frontAndBackPlanes
-{
-        **type            empty;**
-        **inGroups        1(empty);**
-        nFaces          5590;
-        startFace       5446;
-}
-wall-8
-{
-        **type            wall;**
-        **inGroups        1(wall);**
-        nFaces          122;
-        startFace       11036;
-}
-    wall-4
-{
-        **type            wall;**
-        **inGroups        1(wall);**
-        nFaces          101;
-        startFace       11158;
+frontAndBackPlanes  
+{  
+&nbsp;&nbsp;&nbsp;&nbsp;**type            empty;**    
+&nbsp;&nbsp;&nbsp;&nbsp;**inGroups        1(empty);**  
+&nbsp;&nbsp;&nbsp;&nbsp;nFaces          5590;  
+&nbsp;&nbsp;&nbsp;&nbsp;startFace       5446;  
+}  
+wall-8  
+{  
+&nbsp;&nbsp;&nbsp;&nbsp;**type            wall;**  
+&nbsp;&nbsp;&nbsp;&nbsp;**inGroups        1(wall);**  
+&nbsp;&nbsp;&nbsp;&nbsp;nFaces          122;  
+&nbsp;&nbsp;&nbsp;&nbsp;startFace       11036;  
+}  
+wall-4  
+{  
+&nbsp;&nbsp;&nbsp;&nbsp;**type            wall;**  
+&nbsp;&nbsp;&nbsp;&nbsp;**inGroups        1(wall);**  
+&nbsp;&nbsp;&nbsp;&nbsp;nFaces          101;  
+&nbsp;&nbsp;&nbsp;&nbsp;startFace       11158;  
 }    
